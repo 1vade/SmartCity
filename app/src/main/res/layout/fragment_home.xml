@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#75D3DF"
+        android:gravity="center">
+<!--设置内部控件居中-->
+        <SearchView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/textview_border"/>
+    </LinearLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:banner_loop_time="2000"
+        app:banner_indicator_height="10dp"
+        app:banner_indicator_normal_width="10dp"
+        app:banner_indicator_selected_width="10dp"
+        app:banner_indicator_space="10dp"
+        >
+    </com.youth.banner.Banner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="#CBEDF1"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_view"
+            >
+
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="第一"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#F1EEEE"
+                    android:background="@drawable/bg_more"/>
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="第二"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#F1EEEE"
+                    android:background="@drawable/bg_more"/>
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="第三"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#F1EEEE"
+                    android:background="@drawable/bg_more"/>
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="第四"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#F1EEEE"
+                    android:background="@drawable/bg_more"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#F1EEEE"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="第五"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#F1EEEE"
+                    android:background="@drawable/bg_more"/>
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="第六"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#F1EEEE"
+                    android:background="@drawable/bg_more"/>
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="第七"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#F1EEEE"
+                    android:background="@drawable/bg_more"/>
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="第八"
+                    android:layout_marginHorizontal="10dp"
+                    android:textColor="#F1EEEE"
+                    android:background="@drawable/bg_more"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="新闻专栏"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="#68ABC1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/newstablayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            app:tabSelectedTextColor="#75D3DF"
+            />
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/newsviewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/newstablayout">
+
+        </androidx.viewpager.widget.ViewPager>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
